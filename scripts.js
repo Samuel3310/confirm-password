@@ -8,9 +8,12 @@ let length = document.querySelector('.length')
 let psw = document.querySelector('#psw');
 
 
+
 psw.onfocus = () => {
     messages.style.display = 'block';
-    messages.classList.add('active');
+};
+psw.onblur = () => {
+    messages.style.display = 'none';
 };
 
 psw.onkeyup = () => {
