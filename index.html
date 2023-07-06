@@ -29,15 +29,18 @@
             align-items: center;
         }
 
-       .row  {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+       .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
 
+       h1{
+        max-width: 500px;
+        text-align: center;
+       }
         form{
-            width: 100%;
+            width: 70%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -65,10 +68,8 @@
             border: 1px solid blue;
         }
         .messages {
-            display:none;
             width: 100%;
             max-width: 400px;
-           margin: 0 auto;
             text-align: left;
             background-color: #ccc;
             margin: 20px 0;
@@ -103,11 +104,10 @@
 <body>
     <div class="container">
         <div class="row">
-
+            <h1>Kindly Type to check How Strong Your Password is</h1>
            <form >
-               <h1 style="text-align:center"> Kindly Type to check How Strong Your Password is</h1>
             <div class="inner">
-                <input type="password" name="" id="psw"  required> 
+                <input type="text" name="" id="psw"  required> 
                 <button>submit</button>
             </div>
         </form>
