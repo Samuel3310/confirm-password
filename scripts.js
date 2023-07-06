@@ -10,6 +10,7 @@ let psw = document.querySelector('#psw');
 
 psw.onfocus = () => {
     messages.style.display = 'block';
+    messages.classList.add('active');
 };
 
 psw.onkeyup = () => {
